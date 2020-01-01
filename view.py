@@ -38,11 +38,17 @@ def print_admin_home():
     print()
     print("-----------------------------------")
     print()
-    print("관리자 홈입니다.")
+    print("Here is Administrator Page")
+
+    print("(Choose you will action)")
+    print("1. 상품 조회 \t 2. 상품 등록 \t 3. 상품 수정 \t 4. 매출 조회")
 
 def print_user_home():
     print()
     print("-----------------------------------")
     print()
-    print("사용자 홈입니다.")
+    print("Here is User Page")
+
+    print("(Choose you will action)")
+    print("1. 상품 조회 \t 2. 상품 등록 \t 3. 상품 수정 \t 4. 매출 조회")
     
