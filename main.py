@@ -1,4 +1,4 @@
 import sqlite3
-from control_type import *
+from control.control_type import *
 
 select_type()

@@ -1,5 +1,5 @@
 from view import ViewType
-from control_list_command import *
+from control.control_list_command import *
 
 view_intro = ViewType()
 

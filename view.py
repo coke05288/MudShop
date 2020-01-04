@@ -37,7 +37,7 @@ class ViewAdmin:
         print("-----------------------------------")
         print()
         print("You can register your product here!")
-        print("(상품 등록 뷰)")
+        print("(상품 등록 뷰입니다. (상품id, 상품이름, 상품가격, 상품수량) 순으로 입력해주세요)")
 
     def print_edit_items(self,):
         print()

@@ -1,6 +1,6 @@
 from view import *
-from control_admin_command import*
-from control_user_command import*
+from control.control_admin_command import*
+from control.control_user_command import*
 
 view_admin = ViewAdmin()
 view_user = ViewUser()
