@@ -19,7 +19,7 @@ def add_items():
     while True:
         continue_command = input('추가 등록(Yes), 뒤로가기(No) : ')
         if continue_command == 'Yes':
-            item_data = input('등록할 상품 정보를 입력해 주세요 : ').split(',')
+            item_data = input('등록할 상품 정보를 입력해 주세요(,로 구분해주세요) : ').split(',')
             exec_add_items(item_data)
 
         elif continue_command == 'No':
