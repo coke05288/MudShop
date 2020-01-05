@@ -15,12 +15,12 @@ def select_type():
     view_intro.print_intro()
 
     while True:
-        print("1. Administrator \t 2. User ")
+        print("1. 관리자 \t 2. 유저 ")
         type_input = int(input())
         try:
             command_type[type_input]()
         except KeyError:
-            print("You mistyped it!")
+            print("잘못입력하셨습니다!")
             continue
         else:
             break

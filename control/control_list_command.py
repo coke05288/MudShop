@@ -13,21 +13,18 @@ def select_admin_command():
     command_admin = {
         1 : get_items,
         2 : add_items,
-        3 : edit_items,
-        4 : get_sales
+        # 3 : edit_items,
+        # 4 : get_sales
         }
 
-    view_type.print_admin_home()
-    
     while True:
+        view_type.print_admin_home()
         command_input = int(input())
         try:
             command_admin[command_input]()
         except KeyError:
-            print("You mistyped it!")
+            print("잘못입력하셨습니다!")
             continue
-        else:
-            break
 
 def select_user_command():
      
@@ -46,7 +43,7 @@ def select_user_command():
         try:
             command_user[command_input]()
         except KeyError:
-            print("You mistyped it!")
+            print("잘못입력하셨습니다!")
             continue
         else:
             break
