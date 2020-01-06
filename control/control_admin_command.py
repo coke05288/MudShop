@@ -8,6 +8,15 @@ view_type = ViewType()
 def get_items():
     view_admin.print_get_items()
     exec_get_items()
+    while True:
+        try:
+            command_data = input("뒤로가기는 'Back'을 입력해주세요")
+            if command_data == "Back":
+                return
+            else:
+                continue
+        except Exception:
+            print("잘못입력하셨습니다!")   
 
 def add_items():
     view_admin.print_add_items()
@@ -16,7 +25,10 @@ def add_items():
 
     try:
         item_data = input('등록할 상품 정보를 입력해 주세요(,로 구분해주세요) : ').split(',')
-        exec_add_items(item_data)
+        if item_data == "Back":
+            return
+        else:
+            exec_add_items(item_data)
     except Exception:
         print("잘못입력하셨습니다!")        
 

@@ -13,6 +13,7 @@ class ViewType:
         print("(행동을 선택해주세요)")
         # print("1. 상품 조회 \t 2. 상품 등록 \t 3. 상품 수정 \t 4. 매출 조회")
         print("1. 상품 조회 \t 2. 상품 등록")
+        print("뒤로가기는 'Back'을 입력해주세요")
 
     def print_user_home(self,):
         print()
@@ -23,6 +24,7 @@ class ViewType:
         print("(행동을 선택해주세요)")
         # print("1. 상품 카테고리 조회 \t 2. 상품 전체 조회 \t 3. 주문 내역 조회")
         print("1. 상품 구매 \t 2. 주문 내역 조회")
+        print("뒤로가기는 'Back'을 입력해주세요")
 
 class ViewAdmin:
 
@@ -31,6 +33,7 @@ class ViewAdmin:
         print("-----------------------------------")
         print()
         print("상품 전체 리스트입니다!")
+        print("뒤로가기는 'Back'을 입력해주세요")
 
     def print_add_items(self,):
         print()
@@ -70,6 +73,14 @@ class ViewUser:
         print()
         print("상품 구매 페이지입니다.")
         print("(전체 상품 리스트 뷰)")
+        print("뒤로가기는 'Back'을 입력해주세요")
+
+    def print_buy_items(self,):
+        print()
+        print("-----------------------------------")
+        print()
+        print("(구매하고자 하는 상품의 번호와 수량을 입력해주세요.)")
+        print("뒤로가기는 'Back'을 입력해주세요")
 
     def print_get_bill(self,):
         print()
@@ -77,6 +88,7 @@ class ViewUser:
         print()
         print("아래는 주문내역 리스트 입니다.")
         print("(주문내역 리스트)")
+        print("뒤로가기는 'Back'을 입력해주세요")
 
 
 

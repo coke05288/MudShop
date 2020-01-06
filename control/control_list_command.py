@@ -8,23 +8,29 @@ view_type = ViewType()
 
 def select_admin_command():
     
-    command_input = 0
+    command_input = ''
 
     command_admin = {
         1 : get_items,
-        2 : add_items,
+        2 : add_items
         # 3 : edit_items,
         # 4 : get_sales
         }
 
     while True:
         view_type.print_admin_home()
-        command_input = int(input())
         try:
-            command_admin[command_input]()
-        except KeyError:
+            command_input = str(input())
+            
+            if command_input == "Back":
+                return
+            else:
+                int(command_input)
+                print("Test")
+                command_admin[command_input]()
+        except Exception:
             print("잘못입력하셨습니다!")
-            continue
+            continue    
 
 def select_user_command():
      

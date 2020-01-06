@@ -22,8 +22,6 @@ def select_type():
         except KeyError:
             print("잘못입력하셨습니다!")
             continue
-        else:
-            break
         
 
     print()
