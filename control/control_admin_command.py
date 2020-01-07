@@ -47,9 +47,8 @@ def add_items():
         else:
             continue
     
-    
-# def edit_items():
-#     view_admin.print_edit_items()
+def edit_items():
+    view_admin.print_edit_items()
 
-# def get_sales():
-#     view_admin.print_get_sales()
+def get_sales():
+    view_admin.print_get_sales()
